@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/nombreAgregarMateriaSemestre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Nombre del semestre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/nombrePromedioMateriaSemestre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombreAgregarSemestre"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="Promedio del semestre"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/numeroAgregarMateriaCreditos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombrePromedioSemestre"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="Número de créditos"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAgregarMateriaSemestre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numeroAgregarMateriaCreditos"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Agregar"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        />
+
+</LinearLayout>
